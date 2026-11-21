@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel principal | AsisHoyle</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+                <div class="sidebar-logo">DH</div>
+
+                <div>
+                    <h2>AsisHoyle</h2>
+                    <p>Colegio Daniel Hoyle</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <p class="menu-title">MENÚ PRINCIPAL</p>
+
+                <a href="dashboard.html" class="menu-link active">
+                    <span>▦</span> Panel principal
+                </a>
+
+                <a href="estudiantes.html" class="menu-link">
+                    <span>♟</span> Estudiantes
+                </a>
+
+                <a href="asistencia.html" class="menu-link">
+                    <span>✓</span> Asistencia
+                </a>
+
+                <a href="reportes.html" class="menu-link">
+                    <span>▤</span> Reportes
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="../index.html" class="menu-link logout">
+                    <span>↪</span> Cerrar sesión
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Panel principal</h1>
+                    <p>Bienvenido al sistema de control de asistencia.</p>
+                </div>
+
+                <div class="user-info">
+                    <div class="user-avatar">A</div>
+                    <div>
+                        <strong>Administrador</strong>
+                        <p>Usuario del sistema</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- BIENVENIDA -->
+            <section class="welcome-section">
+                <div>
+                    <h2>¡Bienvenido a AsisHoyle!</h2>
+                    <p>
+                        Administra la asistencia de los estudiantes
+                        del Colegio Daniel Hoyle.
+                    </p>
+                </div>
+                <div class="welcome-icon">🎓</div>
+            </section>
+
+            <!-- TARJETAS DE RESUMEN -->
+            <section class="statistics">
+
+                <article class="stat-card">
+                    <div class="stat-icon blue">♟</div>
+                    <div>
+                        <p>Total de estudiantes</p>
+                        <h3 id="totalEstudiantes">250</h3>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <p>Presentes</p>
+                        <h3 id="totalPresentes">230</h3>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon orange">◷</div>
+                    <div>
+                        <p>Tardanzas</p>
+                        <h3 id="totalTardanzas">12</h3>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon red">✕</div>
+                    <div>
+                        <p>Faltas</p>
+                        <h3 id="totalFaltas">8</h3>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- ACCESOS RÁPIDOS -->
+            <section class="quick-section">
+
+                <h2>Accesos rápidos</h2>
+
+                <div class="quick-grid">
+
+                    <a href="estudiantes.html" class="quick-card">
+                        <span>♟</span>
+                        <h3>Estudiantes</h3>
+                        <p>Consultar y administrar estudiantes.</p>
+                    </a>
+
+                    <a href="asistencia.html" class="quick-card">
+                        <span>✓</span>
+                        <h3>Registrar asistencia</h3>
+                        <p>Registrar presentes, tardanzas y faltas.</p>
+                    </a>
+
+                    <a href="reportes.html" class="quick-card">
+                        <span>▤</span>
+                        <h3>Reportes</h3>
+                        <p>Consultar los registros de asistencia.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <footer class="dashboard-footer">
+                <p>© 2026 AsisHoyle - Colegio Daniel Hoyle</p>
+                <p>Sistema de Control de Asistencia</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+.student-section {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.student-heading {
+    margin-bottom: 25px;
+}
+
+.student-heading h2,
+.student-list h2 {
+    color: #173B68;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.student-heading p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* FORMULARIO */
+
+#formEstudiante {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#formEstudiante input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #DCE3EB;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+#formEstudiante input:focus {
+    border-color: #24578C;
+}
+
+#formEstudiante button {
+    background: #173B68;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formEstudiante button:hover {
+    background: #24578C;
+}
+
+/* MENSAJE */
+
+#mensajeEstudiante {
+    color: #198754;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* TABLA */
+
+.student-list {
+    margin-top: 30px;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.student-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+.student-list th {
+    background: #EAF2FA;
+    color: #173B68;
+    font-size: 13px;
+}
+
+.student-list th,
+.student-list td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #E2E8F0;
+    text-align: left;
+    font-size: 13px;
+}
+
+.student-list td {
+    color: #475569;
+}
+
+/* BOTÓN ELIMINAR */
+
+.btn-eliminar {
+    background: #FCE8E8;
+    color: #B42318;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background: #F5D0D0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    #formEstudiante {
+        grid-template-columns: 1fr;
+    }
+
+    .student-section {
+        padding: 18px;
+    }
+}

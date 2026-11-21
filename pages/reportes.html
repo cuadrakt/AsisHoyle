@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - AsisHoyle</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/reportes.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- MENÚ LATERAL -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-logo">DH</div>
+            <div>
+                <h2>AsisHoyle</h2>
+                <p>Colegio Daniel Hoyle</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <p class="menu-title">MENÚ PRINCIPAL</p>
+
+            <a href="dashboard.html" class="menu-link">
+                <span>▦</span> Panel principal
+            </a>
+
+            <a href="estudiantes.html" class="menu-link">
+                <span>♟</span> Estudiantes
+            </a>
+
+            <a href="asistencia.html" class="menu-link">
+                <span>✓</span> Asistencia
+            </a>
+
+            <a href="reportes.html" class="menu-link active">
+                <span>▤</span> Reportes
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#" class="menu-link logout" id="btnCerrarSesion">
+                <span>↪</span> Cerrar sesión
+            </a>
+        </div>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Reportes de asistencia</h1>
+                <p>Consulta los registros de asistencia de los estudiantes.</p>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">A</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <p>Usuario del sistema</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="report-section">
+
+            <div class="report-heading">
+                <h2>Resumen de asistencia</h2>
+                <p>Consulta las asistencias registradas por período.</p>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="report-filters">
+
+                <div>
+                    <label for="fechaInicio">Desde:</label>
+                    <input type="date" id="fechaInicio">
+                </div>
+
+                <div>
+                    <label for="fechaFin">Hasta:</label>
+                    <input type="date" id="fechaFin">
+                </div>
+
+                <button type="button" id="btnConsultar">
+                    Consultar
+                </button>
+
+                <button type="button" id="btnLimpiar">
+                    Limpiar
+                </button>
+
+            </div>
+
+            <!-- TARJETAS -->
+            <div class="report-statistics">
+
+                <div class="report-card">
+                    <p>Total de registros</p>
+                    <h3 id="totalRegistros">0</h3>
+                </div>
+
+                <div class="report-card green">
+                    <p>Presentes</p>
+                    <h3 id="totalPresentes">0</h3>
+                </div>
+
+                <div class="report-card orange">
+                    <p>Tardanzas</p>
+                    <h3 id="totalTardanzas">0</h3>
+                </div>
+
+                <div class="report-card red">
+                    <p>Faltas</p>
+                    <h3 id="totalFaltas">0</h3>
+                </div>
+
+            </div>
+
+            <!-- TABLA -->
+            <div class="report-list">
+                <h2>Detalle de asistencias</h2>
+
+                <div class="report-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Código</th>
+                                <th>Estudiante</th>
+                                <th>Grado</th>
+                                <th>Sección</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listaReportes"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p id="mensajeReporte"></p>
+
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>AsisHoyle - Colegio Daniel Hoyle</p>
+            <p>Sistema de Control de Asistencia</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="../js/reportes.js"></script>
+
+</body>
+</html>
