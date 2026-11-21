@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia - AsisHoyle</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/asistencia.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- MENÚ LATERAL -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-logo">DH</div>
+            <div>
+                <h2>AsisHoyle</h2>
+                <p>Colegio Daniel Hoyle</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <p class="menu-title">MENÚ PRINCIPAL</p>
+
+            <a href="dashboard.html" class="menu-link">
+                <span>▦</span> Panel principal
+            </a>
+
+            <a href="estudiantes.html" class="menu-link">
+                <span>♟</span> Estudiantes
+            </a>
+
+            <a href="asistencia.html" class="menu-link active">
+                <span>✓</span> Asistencia
+            </a>
+
+            <a href="reportes.html" class="menu-link">
+                <span>▤</span> Reportes
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#" class="menu-link logout" id="btnCerrarSesion">
+                <span>↪</span> Cerrar sesión
+            </a>
+        </div>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Control de asistencia</h1>
+                <p>Registro diario de asistencia de los estudiantes.</p>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">A</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <p>Usuario del sistema</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="attendance-section">
+
+            <div class="attendance-heading">
+                <h2>Registro de asistencia</h2>
+                <p>Selecciona la fecha y registra el estado de cada estudiante.</p>
+            </div>
+
+            <div class="date-container">
+                <label for="fechaAsistencia">Fecha de asistencia:</label>
+                <input type="date" id="fechaAsistencia">
+            </div>
+
+            <div class="attendance-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Estudiante</th>
+                            <th>Grado</th>
+                            <th>Sección</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaAsistencia"></tbody>
+                </table>
+            </div>
+
+            <button type="button" id="btnGuardarAsistencia">
+                Guardar asistencia
+            </button>
+
+            <p id="mensajeAsistencia"></p>
+
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>AsisHoyle - Colegio Daniel Hoyle</p>
+            <p>Sistema de Control de Asistencia</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="../js/asistencia.js"></script>
+
+</body>
+</html>

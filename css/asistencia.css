@@ -1,0 +1,121 @@
+
+/* MÓDULO DE ASISTENCIA */
+
+.attendance-section {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.attendance-heading {
+    margin-bottom: 25px;
+}
+
+.attendance-heading h2 {
+    color: #173B68;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.attendance-heading p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* FECHA */
+
+.date-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.date-container label {
+    color: #173B68;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.date-container input {
+    padding: 11px;
+    border: 1px solid #DCE3EB;
+    border-radius: 8px;
+}
+
+/* TABLA */
+
+.attendance-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.attendance-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-table th {
+    background: #EAF2FA;
+    color: #173B68;
+    font-size: 13px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #E2E8F0;
+    text-align: left;
+    font-size: 13px;
+}
+
+.attendance-table td {
+    color: #475569;
+}
+
+/* SELECTOR DE ESTADO */
+
+.attendance-table select {
+    padding: 9px;
+    border: 1px solid #DCE3EB;
+    border-radius: 6px;
+    background: white;
+    color: #263445;
+}
+
+/* BOTÓN */
+
+#btnGuardarAsistencia {
+    margin-top: 22px;
+    background: #173B68;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 22px;
+    cursor: pointer;
+}
+
+#btnGuardarAsistencia:hover {
+    background: #24578C;
+}
+
+#mensajeAsistencia {
+    margin-top: 15px;
+    color: #198754;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    .attendance-section {
+        padding: 18px;
+    }
+
+    .date-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
